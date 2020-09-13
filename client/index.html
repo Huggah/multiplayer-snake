@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>My name a Snake</title>
+	</head>
+
+	<body>
+		<div id="join_room">
+			<input placeholder="Name" id="name">
+			<input placeholder="Room Code" id="code">
+			<button id="join">Join Room</button>
+			<button id="create">Create Room</button>
+		</div>
+
+		<div id="game" style="display:none">
+			<h1 id="room_code_display">Room Code: </h1>
+
+			<div id='players_list'>
+				
+			</div>
+		</div>
+
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<script src="/client/script.js"></script>
+	</body>
+</html>

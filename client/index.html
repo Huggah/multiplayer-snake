@@ -1,21 +1,33 @@
 <html>
 	<head>
 		<title>My name a Snake</title>
+		<link rel="stylesheet" href="/client/styles.css">
 	</head>
 
 	<body>
 		<div id="join_room">
-			<input placeholder="Name" id="name">
-			<input placeholder="Room Code" id="code">
+			<input placeholder="Name" id="name", maxlength="16">
+			<input placeholder="Room Code" id="code", maxlength="4">
 			<button id="join">Join Room</button>
 			<button id="create">Create Room</button>
 		</div>
 
-		<div id="game" style="display:none">
-			<h1 id="room_code_display">Room Code: </h1>
+		<div id="game">
+			<div id="menu">
+				<h1 id="room_code_display">Room Code: </h1>
 
-			<div id='players_list'>
-				
+				<div id='players_list'>
+					
+				</div>
+
+				<div class='arrows'>
+					<div id='top'>
+						<img class='arrow', id='arrow_up' src='/client/img/arrow.png'>
+					</div>
+					<img class='arrow', id='arrow_left' src='/client/img/arrow.png'>
+					<img class='arrow', id='arrow_down' src='/client/img/arrow.png'>
+					<img class='arrow', id='arrow_right' src='/client/img/arrow.png'>
+				</div>
 			</div>
 		</div>
 
